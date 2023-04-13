@@ -1,0 +1,154 @@
+/* Add some style here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  background-color: #060606;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header h1 {
+  margin-left: 20px;
+}
+
+#header nav {
+  margin-right: 20px;
+}
+
+#header nav ul {
+  display: flex;
+  list-style-image: none;
+}
+
+#header nav ul li {
+  margin-left: 10px;
+}
+
+#header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#content {
+  width: 80%;
+  margin: auto;
+}
+
+#search {
+  margin-top: 20px;
+}
+
+#search input[type="text"] {
+  width: 80%;
+  padding: 10px;
+}
+
+#search input[type="submit"] {
+  width: 10%;
+  padding: 10px;
+}
+
+#slider {
+  margin-top: 20px;
+}
+
+#slider img {
+  width: 100%;
+}
+
+#now-showing, #coming-soon {
+  margin-top: 20px;
+}
+
+#now-showing h2, #coming-soon h2 {
+  text-align: center;
+}
+
+.movie-card {
+  width: 25%;
+  display: inline-block;
+}
+
+.movie-card img {
+  width: 5%;
+}
+
+.movie-card h3 {
+  text-align: center;
+}
+
+.movie-card p {
+  text-align: center;
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+}
+
+
+/* Add some style here */
+#coming-soon {
+  margin-top: 20px;
+}
+
+#coming-soon h2 {
+  text-align: center;
+}
+
+.movie-card1 {
+  display: flex;
+  background-color: transparent;
+  
+}
+
+.movie-card2 {
+  display: flex;
+  background-color: transparent;
+}
+
+.movie-card3 {
+  display: flex;
+  background-color: transparent;
+}
+
+.movie-card4 {
+  display: flex;
+  background-color: transparent;
+}
+
+.flex-container > div {
+  background-color: transparent;
+  margin: 30px;
+  padding: 40px;
+}
+
+body{
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.swiper{
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-slide img{
+  width: 100%;
+}
+
+.swiper .swiper-button-prev , .swiper .swiper-button-next{
+  color: black;
+}
+
+.swiper .swiper-pagination-bullet-active{
+  background: #fff;
+}

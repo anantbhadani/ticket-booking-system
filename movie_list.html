@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <style>
+
+     *{ 
+        box-sizing: border-box; 
+     }
+    /* Create four equal columns that floats next to each other */ 
+    .column { 
+        float: left; 
+        width: 25%; 
+        padding: 10px; 
+    }
+    
+    /* Clear floats after the columns */ 
+    .row:after { 
+        content: “”; 
+        display: table; 
+        clear: both; 
+    }
+    
+    /* Style the poster image */ 
+    .poster { 
+        width: 100%; 
+        height: auto; 
+    }
+    
+    /* Style the movie title */ 
+    .title { 
+        font-weight: bold; 
+        font-size: 18px; 
+    }
+    
+    /* Style the movie rating */ 
+    .rating { 
+        color: green; 
+    }
+    
+    /* Style the movie review */ 
+    .review { 
+        font-style: italic; 
+    }
+    
+    /* Style the download button */ 
+    .download { 
+        background-color: blue; 
+        color: white; 
+        padding: 5px; 
+        text-decoration: none; 
+        } 
+        </style> 
+        </head> 
+        <body>
+    
+    <h1>Movie List</h1>
+    
+    <div class=“row”> 
+        <div class=“column”> 
+        <img src=“poster1.jpg” alt=“Poster” class=“poster”> 
+        <p class=“title”>Inception (2010)</p> <p class=“rating”>IMDb Rating: 8.8/10</p> 
+        <p class=“review”>“A mind-bending thriller that will keep you on the edge of your seat.”</p> 
+        <a href=“https://www.netflix.com/in/title/70131314” class=“download”>Download</a> 
+    </div> 
+    <div class=“column”> 
+        <img src=“poster2.jpg” alt=“Poster” class=“poster”> 
+        <p class=“title”>Parasite (2019)</p> 
+        <p class=“rating”>IMDb Rating: 8.6/10</p> 
+        <p class=“review”>“A dark comedy that exposes the harsh realities of social inequality.”</p> 
+        <a href=“https://www.amazon.com/Parasite-English-Subtitled-Kang-Ho-Song/dp/B07YTDYJ4W” class=“download”>Download</a> 
+    </div> 
+    <div class=“column”> 
+        <img src=“poster3.jpg” alt=“Poster” class=“poster”> 
+        <p class=“title”>The Matrix (1999)</p> 
+        <p class=“rating”>IMDb Rating: 8.7/10</p> 
+        <p class=“review”>“A groundbreaking sci-fi action film that redefined the genre.”</p> 
+        <a href=“https://www.hulu.com/movie/the-matrix-1999-6c4f0f0b-5e4f-4c6d-bb0e-3b4c2c1d2f2c” class=“download”>Download</a> 
+    </div> 
+</div>
+    
+    </body> 
+    </html>

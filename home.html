@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Movie Ticket Booking System</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div id="header">
+    <h1>Movie Ticket Booking System</h1>
+    <nav>
+      <div>
+        <a href="#">Home</a>
+        <a href="movie_list.html">Movies</a>
+        <a href="#">Theaters</a>
+        <a href="#">Offers</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+  </div>
+  <div id="content">
+    <div id="search">
+      <form action="#" method="get">
+        <input type="text" name="keyword" placeholder="Search by movie or theater name">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+    <div id="slider">
+      <!-- Add some images of movies here -->
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="Assets/poster/Shazam.jpg" width="100" height="600">
+    </div>
+    <div class="swiper-slide">
+      <img src="Assets/poster/John Wick.jpg" width="100" height="600">
+    </div>
+    <div class="swiper-slide">
+      <img src="Assets/poster/Aquaman.jpg" width="100" height="600">
+    </div>
+    <div class="swiper-slide">
+      <img src="Assets/poster/Ant-man Wasp.jpg" width="100" height="600">
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false, 
+          },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+      </script>
+    </div>
+    <div id="now-showing">
+      <h2>Now Showing</h2>
+  <!-- Add some movie cards here -->
+  <div class="movie-card1">
+    <img src="Assets/poster/Shazam.jpg" alt="Shazam! Fury of the Gods" width="15%" height="15%">
+    <h3>Shazam! Fury of the Gods</h3>
+    <p>Release date: March 17, 2023</p>
+  </div>
+  <br/>
+  <div class="movie-card2">
+    <img src="Assets/poster/John Wick.jpg" alt="John Wick: Chapter 4"  width="15%" height="15%">
+    <h3>John Wick: Chapter 4</h3>
+    <p>Release date: March 24, 2023</p>
+  </div>
+  <br/>
+  <div class="movie-card3">
+    <img src="Assets/poster/Ant-man Wasp.jpg" alt="Ant-Man and the Wasp: Quantumania" width="15%" height="15%">
+    <h3>Ant-Man and the Wasp: Quantumania</h3>
+    <p>Release date: February 17, 2023</p>
+  </div>
+  <br/>
+  <div class="movie-card4">
+    <img src="Assets/poster/Aquaman.jpg" alt="Aquaman and the Lost Kingdom" width="15%" height="15%">
+    <h3>Aquaman and the Lost Kingdom</h3>
+    <p>Release date: December 16, 2023</p>
+  </div>
+  <br/>
+</div>
+      <!-- Add some movie cards here -->
+    </div>
+    <div id="coming-soon">
+      <h2>Coming Soon</h2>
+      <!-- Add some movie cards here -->
+    </div>
+  </div>
+  <div id="footer">
+    <!-- Add some links and information here -->
+  </div>
+</body>
+</html>
